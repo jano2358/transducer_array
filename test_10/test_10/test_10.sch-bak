@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
+Sheet 1 1
 Title "Ultrasonic array speaker"
 Date "2021-05-23"
 Rev "0.1"
@@ -2854,18 +2854,6 @@ Wire Wire Line
 	6300 1050 5200 1050
 Connection ~ 7500 950 
 Connection ~ 7600 1050
-$Sheet
-S 2500 8600 2100 1300
-U 60C21D92
-F0 "Sheet60C21D91" 50
-F1 "fake_1.sch" 50
-$EndSheet
-$Sheet
-S 5650 8600 1450 1350
-U 60C231A6
-F0 "Sheet60C231A5" 50
-F1 "fake_2.sch" 50
-$EndSheet
 Wire Wire Line
 	7600 1050 8800 1050
 Wire Wire Line
