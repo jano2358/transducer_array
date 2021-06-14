@@ -1,0 +1,16 @@
+06-07 19:18:48 place_footprints.action_place_footprints 414:Plugin executed on: 'linux'
+06-07 19:18:48 place_footprints.action_place_footprints 415:Plugin executed with python version: '3.9.5 (default, May 24 2021, 12:50:35) \n[GCC 11.1.0]'
+06-07 19:18:48 place_footprints.action_place_footprints 416:KiCad build version: 5.1.10
+06-07 19:18:48 place_footprints.action_place_footprints 417:Place footprints plugin version: 54 started
+06-07 19:18:49 place_footprints.place_footprints 213:getting project hierarchy from schematics
+06-07 19:18:49 place_footprints.place_footprints 228:getting a list of all footprints on board
+06-07 19:18:49 place_footprints.action_place_footprints 472:Reference designator is: LS
+06-07 19:18:49 place_footprints.action_place_footprints 473:Rerefence number is: 60
+06-07 19:18:49 place_footprints.action_place_footprints 504:Sorted and filtered list:
+['LS1', 'LS2', 'LS3', 'LS4', 'LS5', 'LS6', 'LS7', 'LS8', 'LS9', 'LS10', 'LS11', 'LS12', 'LS13', 'LS14', 'LS15', 'LS16', 'LS17', 'LS18', 'LS19', 'LS20', 'LS21', 'LS22', 'LS23', 'LS24', 'LS25', 'LS26', 'LS27', 'LS28', 'LS29', 'LS30', 'LS31', 'LS32', 'LS33', 'LS34', 'LS35', 'LS36', 'LS37', 'LS38', 'LS39', 'LS40', 'LS41', 'LS42', 'LS43', 'LS44', 'LS45', 'LS46', 'LS47', 'LS48', 'LS49', 'LS50', 'LS51', 'LS52', 'LS53', 'LS54', 'LS55', 'LS56', 'LS57', 'LS58', 'LS59', 'LS60', 'LS61', 'LS62', 'LS63', 'LS64', 'LS65', 'LS66', 'LS67', 'LS68', 'LS69', 'LS70', 'LS71', 'LS72', 'LS73', 'LS74', 'LS75', 'LS76', 'LS77', 'LS78', 'LS79', 'LS80']
+06-07 19:19:11 place_footprints.action_place_footprints 535:Modules to place:
+['LS1', 'LS2', 'LS3', 'LS4', 'LS5', 'LS6', 'LS7', 'LS8', 'LS9', 'LS10', 'LS11', 'LS12', 'LS13', 'LS14', 'LS15', 'LS16', 'LS17', 'LS18', 'LS19', 'LS20', 'LS21', 'LS22', 'LS23', 'LS24', 'LS25', 'LS26', 'LS27', 'LS28', 'LS29', 'LS30', 'LS31', 'LS32', 'LS33', 'LS34', 'LS35', 'LS36', 'LS37', 'LS38', 'LS39', 'LS40', 'LS41', 'LS42', 'LS43', 'LS44', 'LS45', 'LS46', 'LS47', 'LS48', 'LS49', 'LS50', 'LS51', 'LS52', 'LS53', 'LS54', 'LS55', 'LS56', 'LS57', 'LS58', 'LS59', 'LS60', 'LS61', 'LS62', 'LS63', 'LS64', 'LS65', 'LS66', 'LS67', 'LS68', 'LS69', 'LS70', 'LS71', 'LS72', 'LS73', 'LS74', 'LS75', 'LS76', 'LS77', 'LS78', 'LS79', 'LS80']
+06-07 19:19:11 place_footprints.place_footprints 350:Starting placing with circular layout
+06-07 19:19:11 place_footprints.place_footprints 360:reference module position at: wxPoint(133200000, 277400000)
+06-07 19:19:11 place_footprints.place_footprints 365:rotation center at: (133200000, 290400000.0)
+06-07 19:19:11 place_footprints.action_place_footprints 545:Placing complete
