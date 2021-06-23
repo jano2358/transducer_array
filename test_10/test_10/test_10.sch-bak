@@ -2950,33 +2950,178 @@ Connection ~ 7100 5550
 $Comp
 L Device:LED D1
 U 1 1 60F8A406
-P 9500 900
-F 0 "D1" H 9493 1117 50  0000 C CNN
-F 1 "LED" H 9493 1026 50  0000 C CNN
-F 2 "temp_pcb_lib:CREE_CXB1512" H 9500 900 50  0001 C CNN
-F 3 "~" H 9500 900 50  0001 C CNN
-	1    9500 900 
+P 9550 3650
+F 0 "D1" H 9543 3867 50  0000 C CNN
+F 1 "LED" H 9543 3776 50  0000 C CNN
+F 2 "temp_pcb_lib:CREE_CXB1512" H 9550 3650 50  0001 C CNN
+F 3 "~" H 9550 3650 50  0001 C CNN
+	1    9550 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 6107F170
-P 8950 900
-F 0 "J2" H 8868 575 50  0000 C CNN
-F 1 "Array set 0" H 8868 666 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 8950 900 50  0001 C CNN
-F 3 "~" H 8950 900 50  0001 C CNN
-	1    8950 900 
+P 9000 3650
+F 0 "J2" H 8918 3325 50  0000 C CNN
+F 1 "Array set 0" H 8918 3416 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 9000 3650 50  0001 C CNN
+F 3 "~" H 9000 3650 50  0001 C CNN
+	1    9000 3650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 900  9350 900 
+	9200 3650 9400 3650
 Wire Wire Line
-	9150 1000 9650 1000
+	9200 3750 9700 3750
 Wire Wire Line
-	9650 1000 9650 900 
+	9700 3750 9700 3650
 Wire Wire Line
 	3400 750  3400 1000
 Wire Wire Line
 	2300 850  3500 850 
+$Comp
+L Device:Speaker_Ultrasound LS60
+U 1 1 610B34BB
+P 9050 1000
+F 0 "LS60" H 8950 700 50  0000 L CNN
+F 1 "Ultrasonic" H 8950 600 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1040H07T_D10mm_H7mm" H 9015 950 50  0001 C CNN
+F 3 "~" H 9015 950 50  0001 C CNN
+	1    9050 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1000 8700 1000
+$Comp
+L Device:Speaker_Ultrasound LS61
+U 1 1 610B34E0
+P 9050 1650
+F 0 "LS61" H 8950 1350 50  0000 L CNN
+F 1 "Ultrasonic" H 8950 1250 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1040H07T_D10mm_H7mm" H 9015 1600 50  0001 C CNN
+F 3 "~" H 9015 1600 50  0001 C CNN
+	1    9050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1650 8700 1650
+Wire Wire Line
+	8850 1750 8750 1750
+$Comp
+L Device:Speaker_Ultrasound LS62
+U 1 1 610B34EC
+P 9050 2300
+F 0 "LS62" H 8950 2000 50  0000 L CNN
+F 1 "Ultrasonic" H 8950 1900 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1040H07T_D10mm_H7mm" H 9015 2250 50  0001 C CNN
+F 3 "~" H 9015 2250 50  0001 C CNN
+	1    9050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2300 8700 2300
+Wire Wire Line
+	8850 2400 8750 2400
+$Comp
+L Device:R R119
+U 1 1 610B34F8
+P 8550 1000
+F 0 "R119" V 8450 850 50  0000 C CNN
+F 1 "0.1Ω" V 8450 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 1000 50  0001 C CNN
+F 3 "~" H 8550 1000 50  0001 C CNN
+	1    8550 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 1000 8200 1000
+Wire Wire Line
+	8850 1100 8750 1100
+$Comp
+L Device:R R122
+U 1 1 610B3504
+P 8600 1100
+F 0 "R122" V 8700 950 50  0000 C CNN
+F 1 "0.1Ω" V 8700 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 1100 50  0001 C CNN
+F 3 "~" H 8600 1100 50  0001 C CNN
+	1    8600 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 1100 8300 1100
+$Comp
+L Device:R R120
+U 1 1 610B350F
+P 8550 1650
+F 0 "R120" V 8450 1500 50  0000 C CNN
+F 1 "0.1Ω" V 8450 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 1650 50  0001 C CNN
+F 3 "~" H 8550 1650 50  0001 C CNN
+	1    8550 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R123
+U 1 1 610B3519
+P 8600 1750
+F 0 "R123" V 8700 1600 50  0000 C CNN
+F 1 "0.1Ω" V 8700 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 1750 50  0001 C CNN
+F 3 "~" H 8600 1750 50  0001 C CNN
+	1    8600 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 1650 8200 1650
+Wire Wire Line
+	8450 1750 8300 1750
+$Comp
+L Device:R R121
+U 1 1 610B3525
+P 8550 2300
+F 0 "R121" V 8450 2150 50  0000 C CNN
+F 1 "0.1Ω" V 8450 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 2300 50  0001 C CNN
+F 3 "~" H 8550 2300 50  0001 C CNN
+	1    8550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R124
+U 1 1 610B352F
+P 8600 2400
+F 0 "R124" V 8700 2250 50  0000 C CNN
+F 1 "0.1Ω" V 8700 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 2400 50  0001 C CNN
+F 3 "~" H 8600 2400 50  0001 C CNN
+	1    8600 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 2400 8300 2400
+Wire Wire Line
+	8400 2300 8200 2300
+Wire Wire Line
+	7000 750  8200 750 
+Wire Wire Line
+	8200 750  8200 1000
+Connection ~ 7000 750 
+Connection ~ 8200 1000
+Wire Wire Line
+	8200 1000 8200 1650
+Connection ~ 8200 1650
+Wire Wire Line
+	8200 1650 8200 2300
+Wire Wire Line
+	8300 2400 8300 1750
+Wire Wire Line
+	8300 850  7100 850 
+Connection ~ 8300 1100
+Wire Wire Line
+	8300 1100 8300 850 
+Connection ~ 8300 1750
+Wire Wire Line
+	8300 1750 8300 1100
+Connection ~ 7100 850 
 $EndSCHEMATC
