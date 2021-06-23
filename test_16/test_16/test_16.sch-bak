@@ -1,0 +1,1231 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ultrasonic array speaker"
+Date "2021-05-23"
+Rev "0.1"
+Comp "000"
+Comment1 "Designer: Alejandro Bizzotto"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 60AA4C14
+P 2050 1100
+F 0 "J1" H 1968 775 50  0000 C CNN
+F 1 "Array set 0" H 1968 866 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 2050 1100 50  0001 C CNN
+F 3 "~" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 1250 4100 1250
+Wire Wire Line
+	4250 1900 4100 1900
+Wire Wire Line
+	4250 2000 4150 2000
+$Comp
+L Device:Speaker_Ultrasound LS15
+U 1 1 620EAA0C
+P 4450 3850
+F 0 "LS15" H 4350 3550 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 3450 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 3800 50  0001 C CNN
+F 3 "~" H 4415 3800 50  0001 C CNN
+	1    4450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2550 4100 2550
+Wire Wire Line
+	4250 2650 4150 2650
+Wire Wire Line
+	4250 3200 4100 3200
+Wire Wire Line
+	4250 3300 4150 3300
+Wire Wire Line
+	4250 3850 4100 3850
+Wire Wire Line
+	4250 3950 4150 3950
+Wire Wire Line
+	4250 4500 4100 4500
+Wire Wire Line
+	4250 4600 4150 4600
+$Comp
+L Device:Speaker_Ultrasound LS18
+U 1 1 620EAA48
+P 4450 5800
+F 0 "LS18" H 4350 5500 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 5400 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 5750 50  0001 C CNN
+F 3 "~" H 4415 5750 50  0001 C CNN
+	1    4450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5800 4100 5800
+Wire Wire Line
+	4250 5900 4150 5900
+Wire Wire Line
+	4250 6450 4100 6450
+Wire Wire Line
+	4250 6550 4150 6550
+$Comp
+L Device:Speaker_Ultrasound LS20
+U 1 1 620EAA60
+P 4450 7100
+F 0 "LS20" H 4350 6800 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 6700 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 7050 50  0001 C CNN
+F 3 "~" H 4415 7050 50  0001 C CNN
+	1    4450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 7100 4100 7100
+Wire Wire Line
+	4250 7200 4150 7200
+Wire Wire Line
+	3700 1100 3700 1350
+Connection ~ 3700 1350
+Wire Wire Line
+	3700 1350 3700 2000
+Connection ~ 3700 2000
+Wire Wire Line
+	3700 2000 3700 2650
+Connection ~ 3700 2650
+Wire Wire Line
+	3700 2650 3700 3300
+Connection ~ 3700 3300
+Wire Wire Line
+	3700 3300 3700 3950
+Connection ~ 3700 3950
+Wire Wire Line
+	3700 3950 3700 4600
+Connection ~ 3700 4600
+Connection ~ 3700 5900
+Wire Wire Line
+	3700 5900 3700 6550
+Connection ~ 3700 6550
+Wire Wire Line
+	3700 6550 3700 7200
+Wire Wire Line
+	3600 1000 3600 1250
+Connection ~ 3600 1250
+Wire Wire Line
+	3600 1250 3600 1900
+Connection ~ 3600 1900
+Wire Wire Line
+	3600 1900 3600 2550
+Connection ~ 3600 2550
+Wire Wire Line
+	3600 2550 3600 3200
+Connection ~ 3600 3200
+Wire Wire Line
+	3600 3200 3600 3850
+Connection ~ 3600 3850
+Wire Wire Line
+	3600 3850 3600 4500
+Connection ~ 3600 4500
+Connection ~ 3600 5800
+Wire Wire Line
+	3600 5800 3600 6450
+Connection ~ 3600 6450
+Wire Wire Line
+	3600 6450 3600 7100
+$Comp
+L Device:R R21
+U 1 1 620EAA92
+P 3950 1250
+F 0 "R21" V 3850 1100 50  0000 C CNN
+F 1 "0.1Ω" V 3850 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 1250 50  0001 C CNN
+F 3 "~" H 3950 1250 50  0001 C CNN
+	1    3950 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 1250 3600 1250
+Wire Wire Line
+	4250 1350 4150 1350
+$Comp
+L Device:R R31
+U 1 1 620EAA9E
+P 4000 1350
+F 0 "R31" V 4100 1200 50  0000 C CNN
+F 1 "0.1Ω" V 4100 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 1350 50  0001 C CNN
+F 3 "~" H 4000 1350 50  0001 C CNN
+	1    4000 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 1350 3700 1350
+$Comp
+L Device:R R22
+U 1 1 620EAAA9
+P 3950 1900
+F 0 "R22" V 3850 1750 50  0000 C CNN
+F 1 "0.1Ω" V 3850 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 1900 50  0001 C CNN
+F 3 "~" H 3950 1900 50  0001 C CNN
+	1    3950 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 620EAAB3
+P 4000 2000
+F 0 "R32" V 4100 1850 50  0000 C CNN
+F 1 "0.1Ω" V 4100 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 2000 50  0001 C CNN
+F 3 "~" H 4000 2000 50  0001 C CNN
+	1    4000 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 1900 3600 1900
+Wire Wire Line
+	3850 2000 3700 2000
+$Comp
+L Device:R R23
+U 1 1 620EAABF
+P 3950 2550
+F 0 "R23" V 3850 2400 50  0000 C CNN
+F 1 "0.1Ω" V 3850 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 2550 50  0001 C CNN
+F 3 "~" H 3950 2550 50  0001 C CNN
+	1    3950 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 620EAAC9
+P 4000 2650
+F 0 "R33" V 4100 2500 50  0000 C CNN
+F 1 "0.1Ω" V 4100 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 2650 50  0001 C CNN
+F 3 "~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 620EAAD3
+P 3950 3200
+F 0 "R24" V 3850 3050 50  0000 C CNN
+F 1 "0.1Ω" V 3850 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 3200 50  0001 C CNN
+F 3 "~" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 620EAADD
+P 4000 3300
+F 0 "R34" V 4100 3150 50  0000 C CNN
+F 1 "0.1Ω" V 4100 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 3300 50  0001 C CNN
+F 3 "~" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 620EAAE7
+P 3950 3850
+F 0 "R25" V 3850 3700 50  0000 C CNN
+F 1 "0.1Ω" V 3850 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 3850 50  0001 C CNN
+F 3 "~" H 3950 3850 50  0001 C CNN
+	1    3950 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 620EAAF1
+P 4000 3950
+F 0 "R35" V 4100 3800 50  0000 C CNN
+F 1 "0.1Ω" V 4100 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 620EAAFB
+P 3950 4500
+F 0 "R26" V 3850 4350 50  0000 C CNN
+F 1 "0.1Ω" V 3850 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 4500 50  0001 C CNN
+F 3 "~" H 3950 4500 50  0001 C CNN
+	1    3950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 620EAB05
+P 4000 4600
+F 0 "R36" V 4100 4450 50  0000 C CNN
+F 1 "0.1Ω" V 4100 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 4600 50  0001 C CNN
+F 3 "~" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 620EAB23
+P 3950 5800
+F 0 "R28" V 3850 5650 50  0000 C CNN
+F 1 "0.1Ω" V 3850 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 5800 50  0001 C CNN
+F 3 "~" H 3950 5800 50  0001 C CNN
+	1    3950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 620EAB2D
+P 4000 5900
+F 0 "R38" V 4100 5750 50  0000 C CNN
+F 1 "0.1Ω" V 4100 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 5900 50  0001 C CNN
+F 3 "~" H 4000 5900 50  0001 C CNN
+	1    4000 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 620EAB37
+P 3950 6450
+F 0 "R29" V 3850 6300 50  0000 C CNN
+F 1 "0.1Ω" V 3850 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 6450 50  0001 C CNN
+F 3 "~" H 3950 6450 50  0001 C CNN
+	1    3950 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 620EAB41
+P 4000 6550
+F 0 "R39" V 4100 6400 50  0000 C CNN
+F 1 "0.1Ω" V 4100 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 6550 50  0001 C CNN
+F 3 "~" H 4000 6550 50  0001 C CNN
+	1    4000 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 620EAB4B
+P 3950 7100
+F 0 "R30" V 3850 6950 50  0000 C CNN
+F 1 "0.1Ω" V 3850 7200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 7100 50  0001 C CNN
+F 3 "~" H 3950 7100 50  0001 C CNN
+	1    3950 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 620EAB55
+P 4000 7200
+F 0 "R40" V 4100 7050 50  0000 C CNN
+F 1 "0.1Ω" V 4100 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 7200 50  0001 C CNN
+F 3 "~" H 4000 7200 50  0001 C CNN
+	1    4000 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 7200 3700 7200
+Wire Wire Line
+	3800 7100 3600 7100
+Wire Wire Line
+	3850 6550 3700 6550
+Wire Wire Line
+	3800 6450 3600 6450
+Wire Wire Line
+	3850 5900 3700 5900
+Wire Wire Line
+	3800 5800 3600 5800
+Wire Wire Line
+	3850 4600 3700 4600
+Wire Wire Line
+	3800 4500 3600 4500
+Wire Wire Line
+	3850 3950 3700 3950
+Wire Wire Line
+	3800 3850 3600 3850
+Wire Wire Line
+	3850 3300 3700 3300
+Wire Wire Line
+	3800 3200 3600 3200
+Wire Wire Line
+	3850 2650 3700 2650
+Wire Wire Line
+	3800 2550 3600 2550
+Wire Wire Line
+	3050 1250 2900 1250
+Wire Wire Line
+	3050 1900 2900 1900
+Wire Wire Line
+	3050 2000 2950 2000
+Wire Wire Line
+	3050 2550 2900 2550
+Wire Wire Line
+	3050 2650 2950 2650
+Wire Wire Line
+	3050 3200 2900 3200
+Wire Wire Line
+	3050 3300 2950 3300
+$Comp
+L Device:Speaker_Ultrasound LS23
+U 1 1 620EAB9E
+P 4450 5150
+F 0 "LS23" H 4350 4850 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 4750 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 5100 50  0001 C CNN
+F 3 "~" H 4415 5100 50  0001 C CNN
+	1    4450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3850 2900 3850
+Wire Wire Line
+	3050 3950 2950 3950
+Wire Wire Line
+	3050 4500 2900 4500
+Wire Wire Line
+	3050 4600 2950 4600
+Wire Wire Line
+	3050 5150 2900 5150
+Wire Wire Line
+	3050 5250 2950 5250
+Wire Wire Line
+	3050 5800 2900 5800
+Wire Wire Line
+	3050 5900 2950 5900
+$Comp
+L Device:Speaker_Ultrasound LS14
+U 1 1 620EABCE
+P 4450 3200
+F 0 "LS14" H 4350 2900 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 2800 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 3150 50  0001 C CNN
+F 3 "~" H 4415 3150 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6450 2900 6450
+Wire Wire Line
+	3050 6550 2950 6550
+Wire Wire Line
+	3050 7100 2900 7100
+Wire Wire Line
+	3050 7200 2950 7200
+Wire Wire Line
+	2500 1100 2500 1350
+Connection ~ 2500 1350
+Wire Wire Line
+	2500 1350 2500 2000
+Connection ~ 2500 2000
+Wire Wire Line
+	2500 2000 2500 2650
+Connection ~ 2500 2650
+Wire Wire Line
+	2500 2650 2500 3300
+Connection ~ 2500 3300
+Wire Wire Line
+	2500 3300 2500 3950
+Connection ~ 2500 3950
+Wire Wire Line
+	2500 3950 2500 4600
+Connection ~ 2500 4600
+Wire Wire Line
+	2500 4600 2500 5250
+Connection ~ 2500 5250
+Wire Wire Line
+	2500 5250 2500 5900
+Connection ~ 2500 5900
+Wire Wire Line
+	2500 5900 2500 6550
+Connection ~ 2500 6550
+Wire Wire Line
+	2500 6550 2500 7200
+Wire Wire Line
+	2400 1000 2400 1250
+Connection ~ 2400 1250
+Wire Wire Line
+	2400 1250 2400 1900
+Connection ~ 2400 1900
+Wire Wire Line
+	2400 1900 2400 2550
+Connection ~ 2400 2550
+Wire Wire Line
+	2400 2550 2400 3200
+Connection ~ 2400 3200
+Wire Wire Line
+	2400 3200 2400 3850
+Connection ~ 2400 3850
+Wire Wire Line
+	2400 3850 2400 4500
+Connection ~ 2400 4500
+Wire Wire Line
+	2400 4500 2400 5150
+Connection ~ 2400 5150
+Wire Wire Line
+	2400 5150 2400 5800
+Connection ~ 2400 5800
+Wire Wire Line
+	2400 5800 2400 6450
+Connection ~ 2400 6450
+Wire Wire Line
+	2400 6450 2400 7100
+$Comp
+L Device:R R1
+U 1 1 620EAC0C
+P 2750 1250
+F 0 "R1" V 2650 1100 50  0000 C CNN
+F 1 "0.1Ω" V 2650 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1250 50  0001 C CNN
+F 3 "~" H 2750 1250 50  0001 C CNN
+	1    2750 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1250 2400 1250
+Wire Wire Line
+	3050 1350 2950 1350
+$Comp
+L Device:R R11
+U 1 1 620EAC18
+P 2800 1350
+F 0 "R11" V 2900 1200 50  0000 C CNN
+F 1 "0.1Ω" V 2900 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1350 50  0001 C CNN
+F 3 "~" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 1350 2500 1350
+$Comp
+L Device:R R2
+U 1 1 620EAC23
+P 2750 1900
+F 0 "R2" V 2650 1750 50  0000 C CNN
+F 1 "0.1Ω" V 2650 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1900 50  0001 C CNN
+F 3 "~" H 2750 1900 50  0001 C CNN
+	1    2750 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 620EAC2D
+P 2800 2000
+F 0 "R12" V 2900 1850 50  0000 C CNN
+F 1 "0.1Ω" V 2900 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 2000 50  0001 C CNN
+F 3 "~" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1900 2400 1900
+Wire Wire Line
+	2650 2000 2500 2000
+$Comp
+L Device:R R3
+U 1 1 620EAC39
+P 2750 2550
+F 0 "R3" V 2650 2400 50  0000 C CNN
+F 1 "0.1Ω" V 2650 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 2550 50  0001 C CNN
+F 3 "~" H 2750 2550 50  0001 C CNN
+	1    2750 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 620EAC43
+P 2800 2650
+F 0 "R13" V 2900 2500 50  0000 C CNN
+F 1 "0.1Ω" V 2900 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 2650 50  0001 C CNN
+F 3 "~" H 2800 2650 50  0001 C CNN
+	1    2800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 620EAC4D
+P 2750 3200
+F 0 "R4" V 2650 3050 50  0000 C CNN
+F 1 "0.1Ω" V 2650 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 3200 50  0001 C CNN
+F 3 "~" H 2750 3200 50  0001 C CNN
+	1    2750 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 620EAC57
+P 2800 3300
+F 0 "R14" V 2900 3150 50  0000 C CNN
+F 1 "0.1Ω" V 2900 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 3300 50  0001 C CNN
+F 3 "~" H 2800 3300 50  0001 C CNN
+	1    2800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 620EAC61
+P 2750 3850
+F 0 "R5" V 2650 3700 50  0000 C CNN
+F 1 "0.1Ω" V 2650 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 3850 50  0001 C CNN
+F 3 "~" H 2750 3850 50  0001 C CNN
+	1    2750 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 620EAC6B
+P 2800 3950
+F 0 "R15" V 2900 3800 50  0000 C CNN
+F 1 "0.1Ω" V 2900 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 3950 50  0001 C CNN
+F 3 "~" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 620EAC75
+P 2750 4500
+F 0 "R6" V 2650 4350 50  0000 C CNN
+F 1 "0.1Ω" V 2650 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 4500 50  0001 C CNN
+F 3 "~" H 2750 4500 50  0001 C CNN
+	1    2750 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 620EAC7F
+P 2800 4600
+F 0 "R16" V 2900 4450 50  0000 C CNN
+F 1 "0.1Ω" V 2900 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 4600 50  0001 C CNN
+F 3 "~" H 2800 4600 50  0001 C CNN
+	1    2800 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 620EAC89
+P 2750 5150
+F 0 "R7" V 2650 5000 50  0000 C CNN
+F 1 "0.1Ω" V 2650 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 5150 50  0001 C CNN
+F 3 "~" H 2750 5150 50  0001 C CNN
+	1    2750 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 620EAC93
+P 2800 5250
+F 0 "R17" V 2900 5100 50  0000 C CNN
+F 1 "0.1Ω" V 2900 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 5250 50  0001 C CNN
+F 3 "~" H 2800 5250 50  0001 C CNN
+	1    2800 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 620EAC9D
+P 2750 5800
+F 0 "R8" V 2650 5650 50  0000 C CNN
+F 1 "0.1Ω" V 2650 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 5800 50  0001 C CNN
+F 3 "~" H 2750 5800 50  0001 C CNN
+	1    2750 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 620EACA7
+P 2800 5900
+F 0 "R18" V 2900 5750 50  0000 C CNN
+F 1 "0.1Ω" V 2900 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 5900 50  0001 C CNN
+F 3 "~" H 2800 5900 50  0001 C CNN
+	1    2800 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 620EACB1
+P 2750 6450
+F 0 "R9" V 2650 6300 50  0000 C CNN
+F 1 "0.1Ω" V 2650 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 6450 50  0001 C CNN
+F 3 "~" H 2750 6450 50  0001 C CNN
+	1    2750 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 620EACBB
+P 2800 6550
+F 0 "R19" V 2900 6400 50  0000 C CNN
+F 1 "0.1Ω" V 2900 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 6550 50  0001 C CNN
+F 3 "~" H 2800 6550 50  0001 C CNN
+	1    2800 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 620EACC5
+P 2750 7100
+F 0 "R10" V 2650 6950 50  0000 C CNN
+F 1 "0.1Ω" V 2650 7200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 7100 50  0001 C CNN
+F 3 "~" H 2750 7100 50  0001 C CNN
+	1    2750 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 620EACCF
+P 2800 7200
+F 0 "R20" V 2900 7050 50  0000 C CNN
+F 1 "0.1Ω" V 2900 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 7200 50  0001 C CNN
+F 3 "~" H 2800 7200 50  0001 C CNN
+	1    2800 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 7200 2500 7200
+Wire Wire Line
+	2600 7100 2400 7100
+Wire Wire Line
+	2650 6550 2500 6550
+Wire Wire Line
+	2600 6450 2400 6450
+Wire Wire Line
+	2650 5900 2500 5900
+Wire Wire Line
+	2600 5800 2400 5800
+Wire Wire Line
+	2650 5250 2500 5250
+Wire Wire Line
+	2600 5150 2400 5150
+Wire Wire Line
+	2650 4600 2500 4600
+Wire Wire Line
+	2600 4500 2400 4500
+Wire Wire Line
+	2650 3950 2500 3950
+Wire Wire Line
+	2600 3850 2400 3850
+Wire Wire Line
+	2650 3300 2500 3300
+Wire Wire Line
+	2600 3200 2400 3200
+Wire Wire Line
+	2650 2650 2500 2650
+Wire Wire Line
+	2600 2550 2400 2550
+Connection ~ 2400 1000
+Wire Wire Line
+	2400 1000 3600 1000
+Connection ~ 2500 1100
+Wire Wire Line
+	3700 1100 2500 1100
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 60F2A93B
+P 9150 4550
+F 0 "H7" H 9250 4596 50  0000 L CNN
+F 1 "Acrilico" H 9250 4505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 4550 50  0001 C CNN
+F 3 "~" H 9150 4550 50  0001 C CNN
+	1    9150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 60F40A85
+P 9150 4750
+F 0 "H8" H 9250 4796 50  0000 L CNN
+F 1 "Acrilico" H 9250 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 4750 50  0001 C CNN
+F 3 "~" H 9150 4750 50  0001 C CNN
+	1    9150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 60F46E03
+P 9150 4950
+F 0 "H9" H 9250 4996 50  0000 L CNN
+F 1 "Acrilico" H 9250 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 4950 50  0001 C CNN
+F 3 "~" H 9150 4950 50  0001 C CNN
+	1    9150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 60F46E15
+P 9150 5150
+F 0 "H10" H 9250 5196 50  0000 L CNN
+F 1 "Acrilico" H 9250 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 5150 50  0001 C CNN
+F 3 "~" H 9150 5150 50  0001 C CNN
+	1    9150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60F4D28B
+P 8900 4550
+F 0 "H1" H 9000 4596 50  0000 L CNN
+F 1 "Acrilico" H 9000 4505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 4550 50  0001 C CNN
+F 3 "~" H 8900 4550 50  0001 C CNN
+	1    8900 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60F4D295
+P 8900 4750
+F 0 "H2" H 9000 4796 50  0000 L CNN
+F 1 "Acrilico" H 9000 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 4750 50  0001 C CNN
+F 3 "~" H 8900 4750 50  0001 C CNN
+	1    8900 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60F4D29F
+P 8900 4950
+F 0 "H3" H 9000 4996 50  0000 L CNN
+F 1 "Acrilico" H 9000 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 4950 50  0001 C CNN
+F 3 "~" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60F4D2A9
+P 8900 5150
+F 0 "H4" H 9000 5196 50  0000 L CNN
+F 1 "Acrilico" H 9000 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 5150 50  0001 C CNN
+F 3 "~" H 8900 5150 50  0001 C CNN
+	1    8900 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 60F540C1
+P 9150 5500
+F 0 "H11" H 9250 5546 50  0000 L CNN
+F 1 "Base" H 9250 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 5500 50  0001 C CNN
+F 3 "~" H 9150 5500 50  0001 C CNN
+	1    9150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 60F5A474
+P 9150 5700
+F 0 "H12" H 9250 5746 50  0000 L CNN
+F 1 "Base" H 9250 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9150 5700 50  0001 C CNN
+F 3 "~" H 9150 5700 50  0001 C CNN
+	1    9150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60F669DD
+P 8900 5500
+F 0 "H5" H 9000 5546 50  0000 L CNN
+F 1 "Base" H 9000 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 5500 50  0001 C CNN
+F 3 "~" H 8900 5500 50  0001 C CNN
+	1    8900 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 60F669EF
+P 8900 5700
+F 0 "H6" H 9000 5746 50  0000 L CNN
+F 1 "Base" H 9000 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 8900 5700 50  0001 C CNN
+F 3 "~" H 8900 5700 50  0001 C CNN
+	1    8900 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1100 2500 1100
+Wire Wire Line
+	2250 1000 2400 1000
+Wire Wire Line
+	5450 1250 5300 1250
+Wire Wire Line
+	5450 1900 5300 1900
+Wire Wire Line
+	5450 2000 5350 2000
+Wire Wire Line
+	4250 5150 4100 5150
+Wire Wire Line
+	4250 5250 4150 5250
+$Comp
+L Device:Speaker_Ultrasound LS11
+U 1 1 60BAF7C0
+P 4450 1250
+F 0 "LS11" H 4350 950 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 850 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 1200 50  0001 C CNN
+F 3 "~" H 4415 1200 50  0001 C CNN
+	1    4450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS12
+U 1 1 60BAF7CC
+P 4450 1900
+F 0 "LS12" H 4350 1600 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 1500 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 1850 50  0001 C CNN
+F 3 "~" H 4415 1850 50  0001 C CNN
+	1    4450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS13
+U 1 1 60BAF7D8
+P 4450 2550
+F 0 "LS13" H 4350 2250 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 2150 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 2500 50  0001 C CNN
+F 3 "~" H 4415 2500 50  0001 C CNN
+	1    4450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS16
+U 1 1 60BAF7FC
+P 4450 4500
+F 0 "LS16" H 4350 4200 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 4100 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 4450 50  0001 C CNN
+F 3 "~" H 4415 4450 50  0001 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1100 4900 1350
+Connection ~ 4900 1350
+Wire Wire Line
+	4900 1350 4900 2000
+Connection ~ 4800 1250
+Wire Wire Line
+	4800 1250 4800 1900
+$Comp
+L Device:R R41
+U 1 1 60BAF83A
+P 5150 1250
+F 0 "R41" V 5050 1100 50  0000 C CNN
+F 1 "0.1Ω" V 5050 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 1250 50  0001 C CNN
+F 3 "~" H 5150 1250 50  0001 C CNN
+	1    5150 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1250 4800 1250
+Wire Wire Line
+	5450 1350 5350 1350
+$Comp
+L Device:R R44
+U 1 1 60BAF846
+P 5200 1350
+F 0 "R44" V 5300 1200 50  0000 C CNN
+F 1 "0.1Ω" V 5300 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 1350 50  0001 C CNN
+F 3 "~" H 5200 1350 50  0001 C CNN
+	1    5200 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 1350 4900 1350
+$Comp
+L Device:R R42
+U 1 1 60BAF851
+P 5150 1900
+F 0 "R42" V 5050 1750 50  0000 C CNN
+F 1 "0.1Ω" V 5050 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 1900 50  0001 C CNN
+F 3 "~" H 5150 1900 50  0001 C CNN
+	1    5150 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 60BAF85B
+P 5200 2000
+F 0 "R45" V 5300 1850 50  0000 C CNN
+F 1 "0.1Ω" V 5300 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 2000 50  0001 C CNN
+F 3 "~" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1900 4800 1900
+Wire Wire Line
+	5050 2000 4900 2000
+$Comp
+L Device:R R43
+U 1 1 60BAF867
+P 3950 5150
+F 0 "R43" V 3850 5000 50  0000 C CNN
+F 1 "0.1Ω" V 3850 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 5150 50  0001 C CNN
+F 3 "~" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R46
+U 1 1 60BAF871
+P 4000 5250
+F 0 "R46" V 4100 5100 50  0000 C CNN
+F 1 "0.1Ω" V 4100 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 5250 3700 5250
+Wire Wire Line
+	3800 5150 3600 5150
+Wire Wire Line
+	3600 1000 4800 1000
+Connection ~ 3600 1000
+Connection ~ 3700 1100
+$Comp
+L Device:Speaker_Ultrasound LS8
+U 1 1 60BC0D74
+P 3250 5800
+F 0 "LS8" H 3150 5500 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 5400 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 5750 50  0001 C CNN
+F 3 "~" H 3215 5750 50  0001 C CNN
+	1    3250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS9
+U 1 1 60BC0D80
+P 3250 6450
+F 0 "LS9" H 3150 6150 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 6050 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 6400 50  0001 C CNN
+F 3 "~" H 3215 6400 50  0001 C CNN
+	1    3250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS10
+U 1 1 60BC0D8C
+P 3250 7100
+F 0 "LS10" H 3150 6800 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 6700 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 7050 50  0001 C CNN
+F 3 "~" H 3215 7050 50  0001 C CNN
+	1    3250 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS4
+U 1 1 60BC0DBC
+P 3250 3200
+F 0 "LS4" H 3150 2900 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 2800 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 3150 50  0001 C CNN
+F 3 "~" H 3215 3150 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS1
+U 1 1 60BD92B2
+P 3250 1250
+F 0 "LS1" H 3150 950 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 850 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 1200 50  0001 C CNN
+F 3 "~" H 3215 1200 50  0001 C CNN
+	1    3250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS2
+U 1 1 60BD92D7
+P 3250 1900
+F 0 "LS2" H 3150 1600 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 1500 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 1850 50  0001 C CNN
+F 3 "~" H 3215 1850 50  0001 C CNN
+	1    3250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS5
+U 1 1 60BD92FB
+P 3250 3850
+F 0 "LS5" H 3150 3550 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 3450 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 3800 50  0001 C CNN
+F 3 "~" H 3215 3800 50  0001 C CNN
+	1    3250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS6
+U 1 1 60BD9307
+P 3250 4500
+F 0 "LS6" H 3150 4200 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 4100 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 4450 50  0001 C CNN
+F 3 "~" H 3215 4450 50  0001 C CNN
+	1    3250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS7
+U 1 1 60BD9313
+P 3250 5150
+F 0 "LS7" H 3150 4850 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 4750 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 5100 50  0001 C CNN
+F 3 "~" H 3215 5100 50  0001 C CNN
+	1    3250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS21
+U 1 1 60BD9446
+P 5650 1250
+F 0 "LS21" H 5550 950 50  0000 L CNN
+F 1 "Ultrasonic" H 5550 850 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 5615 1200 50  0001 C CNN
+F 3 "~" H 5615 1200 50  0001 C CNN
+	1    5650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS19
+U 1 1 60BD94B1
+P 4450 6450
+F 0 "LS19" H 4350 6150 50  0000 L CNN
+F 1 "Ultrasonic" H 4350 6050 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 4415 6400 50  0001 C CNN
+F 3 "~" H 4415 6400 50  0001 C CNN
+	1    4450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS3
+U 1 1 60BD9744
+P 3250 2550
+F 0 "LS3" H 3150 2250 50  0000 L CNN
+F 1 "Ultrasonic" H 3150 2150 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 3215 2500 50  0001 C CNN
+F 3 "~" H 3215 2500 50  0001 C CNN
+	1    3250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS22
+U 1 1 60BD97AF
+P 5650 1900
+F 0 "LS22" H 5550 1600 50  0000 L CNN
+F 1 "Ultrasonic" H 5550 1500 50  0000 L CNN
+F 2 "temp_pcb_lib:Buzzer_MSO-A1640H12TR_D16__H12_P10" H 5615 1850 50  0001 C CNN
+F 3 "~" H 5615 1850 50  0001 C CNN
+	1    5650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60F8A406
+P 9500 900
+F 0 "D1" H 9493 1117 50  0000 C CNN
+F 1 "LED" H 9493 1026 50  0000 C CNN
+F 2 "temp_pcb_lib:CREE_CXB1512" H 9500 900 50  0001 C CNN
+F 3 "~" H 9500 900 50  0001 C CNN
+	1    9500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6107F170
+P 8950 900
+F 0 "J2" H 8868 575 50  0000 C CNN
+F 1 "Array set 0" H 8868 666 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 8950 900 50  0001 C CNN
+F 3 "~" H 8950 900 50  0001 C CNN
+	1    8950 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 900  9350 900 
+Wire Wire Line
+	9150 1000 9650 1000
+Wire Wire Line
+	9650 1000 9650 900 
+Wire Wire Line
+	4800 1000 4800 1250
+Wire Wire Line
+	3700 1100 4900 1100
+Wire Wire Line
+	3700 4600 3700 5250
+Wire Wire Line
+	3600 4500 3600 5150
+Connection ~ 3600 5150
+Wire Wire Line
+	3600 5150 3600 5800
+Connection ~ 3700 5250
+Wire Wire Line
+	3700 5250 3700 5900
+$EndSCHEMATC
