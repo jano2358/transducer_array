@@ -1200,13 +1200,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 6107F170
-P 8950 900
-F 0 "J2" H 8868 575 50  0000 C CNN
-F 1 "Array set 0" H 8868 666 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 8950 900 50  0001 C CNN
-F 3 "~" H 8950 900 50  0001 C CNN
-	1    8950 900 
-	-1   0    0    -1  
+P 8950 1000
+F 0 "J2" H 8868 675 50  0000 C CNN
+F 1 "Array set 0" H 8868 766 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 8950 1000 50  0001 C CNN
+F 3 "~" H 8950 1000 50  0001 C CNN
+	1    8950 1000
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9150 900  9350 900 
