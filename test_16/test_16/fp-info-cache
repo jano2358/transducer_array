@@ -1,4 +1,4 @@
-19220286292859242
+19217035927696242
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83030,20 +83030,6 @@ temp_pcb_lib
 Buzzer_MSO-A1040H07T_D10mm_H7mm
 Buzzer, D12.2mm height 6.5mm, https://product.tdk.com/info/en/catalog/datasheets/piezoelectronic_buzzer_ps_en.pdf
 buzzer
-0
-2
-2
-temp_pcb_lib
-Buzzer_MSO-A1640H12TR_D16__H12_P10
-Buzzer, D12.2mm height 6.5mm, https://product.tdk.com/info/en/catalog/datasheets/piezoelectronic_buzzer_ps_en.pdf
-buzzer
-0
-2
-2
-temp_pcb_lib
-CREE_CXB1512
-
-
 0
 2
 2
